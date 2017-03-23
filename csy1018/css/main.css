@@ -1,0 +1,21 @@
+body{
+	margin:0.5%;font-size: 30px;background:skyblue;font-family: tahoma;
+}
+li{
+  list-style:none
+}
+
+header{
+	background:grey;color:black;text-align: center;padding: 1%;
+}
+.nav{
+  background:skyblue;padding:1%;
+}
+  .nav ul li{
+   padding:1%;background:lightgreen;float: left;
+   margin:0.1%;
+  }
+
+a{text-decoration: none;
+}
+/*to remove underline from content lists*/
