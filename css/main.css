@@ -1,8 +1,8 @@
 body{
-	background: rgba(56, 61, 49, 0.46);
+ 	background-color:#008060;
+	background: linear-gradient(to top, #000000, #001a13, #003326, #004d39, #00664d, #008060, #009973, #00b386, #00cc99, #00e6ac, #00ffbf, #1affc6, #33ffcc, #4dffd2, #66ffd9, #80ffdf, #99ffe6, #b3ffec, #ccfff2, #ccfff2, #b3ffec, #99ffe6, #80ffdf, #66ffd9, #4dffd2, #33ffcc, #1affc6, #00ffbf, #00e6ac, #00cc99, #00b386, #009973, #008060, #00664d, #004d39, #003326, #001a13, #000000);
 }
 header {
-	background:rgb(60, 131, 179);
 	color: rgba(21, 14, 73, 0.9);
 	text-align: center;
 	margin-top: -8px;
@@ -11,8 +11,25 @@ header {
 	font-size: 20px;
 	padding:30px;
 }
-heading{
-	text-align: left;
+.heading{
+	text-align: center;
+	color:silver;
+	font-size: 25px;
+}
+header form{
+	float:right;
+	margin-top: -18px;
+}
+input[type=char]{
+	border: 2px solid black;
+	border-radius: 7px;
+
+}
+input[type=button]{
+	background: pink;
+	border: 2px solid black;
+	border-radius: 7px;
+	color:blue;
 }
 	ul {
     list-style-type: none;
@@ -20,24 +37,26 @@ heading{
 	}
 li a {
     display: block;
-		border: 1px solid green;
+		border: 1px solid #990099;
     padding: 8px 30px;
+		border-radius: 4px;
     text-decoration: none;
 		color:yellow;
 		float: left;
 }
 li a:hover {
-    background-color: violet;
-    color: white;
-		font-size: 20px;
-		border: solid; border-radius: 2px;
+    background-color: #00ffff;
+    color:blue;
+		font-size: 22px;
+		border: 1px solid #ff6666;
+}
+section{
+	background: #008060;
 }
 	.img{
 		display: block;
 		border: 1px solid lightblue;
 	  border-radius: 5px;
-		margin-top:35px;
-		margin-bottom: 5px;
 	}
 	.img img{
 		width:1424px;
@@ -47,8 +66,10 @@ li a:hover {
 	.outer{
 		width:1424px;
 		overflow: hidden;
-		margin-left:-8px;
-		height:440px;
+		margin-left:-8.8px;
+		margin-top: -9px;
+		margin-bottom: -10px;
+		height:435px;
 	}
 	.img{
 		position: relative;
@@ -88,14 +109,18 @@ li a:hover {
 	}
 
 	footer{
-		background:rgb(60, 131, 179);
 		display: flex;
 		justify-content: space-between;
 		margin-left: -8px;
 		margin-right: -6.5px;
 		margin-bottom: -30px;
+		color: white;
 	}
-	register{
+    footer article img{
+		width:30px;
+		height:30px;
+	}
+	.register{
 		margin-top: 4%;
 		margin-left: 1%;
 		margin-right: 1%;
@@ -104,15 +129,17 @@ li a:hover {
 		display:flex;
 		flex-direction: row;
 		justify-content: space-between;
+		color: black;
 }
 	input[type=text] {
 	    width: auto;
 	    padding: 10px 15px;
 	    margin: 6px 0;
 	    box-sizing: border-box;
+
 	}
 	input[type=text] {
-    border: 3px solid blue;
+    border: 1px solid blue;
     border-radius: 3px;
 }
 	input[type=number] {
@@ -122,7 +149,7 @@ li a:hover {
 	    box-sizing: border-box;
 	}
 	input[type=number] {
-    border: 3px solid blue;
+    border: 1px solid blue;
     border-radius: 3px;
 	}
 	input[type=date] {
@@ -132,11 +159,11 @@ li a:hover {
 	    box-sizing: border-box;
 	}
 	input[type=date] {
-    border: 3px solid blue;
+    border: 1px solid blue;
     border-radius: 3px;
 	}
 	input[type=submit], input[type=reset] {
-    background-color:brown;
+    background-color:#666633;
     border: none;
     color: silver;
     padding: 16px 32px;
@@ -148,36 +175,55 @@ input[type=submit]:hover, input[type=reset]:hover{
 	font-size: 18px;
 	background: green;
 }
-content{
-	margin-top: 35px;
-	background: rgba(138, 32, 32, 0.46);
+.content{
+	margin-top: 0px;
 	margin-left: -8px;
 	margin-right: -6.5px;
 	margin-bottom: 0px;
-	color: rgb(250, 236, 212);
+	color: black;
 	display:flex;
 	flex-direction: row;
-	padding:2.8%;
+	padding:3.6%;
 	justify-content: space-between;
+}
+table, th, td {
+    border: 1px solid black;
+		padding: 2%;
+		width:500px;
 }
 .pic img{
 	border: solid violet;
 	border-radius: 1px;
-	width:300px;
-	height:340px;
+	width:350px;
+	height:380px;
 	margin-top: -15px;
 	margin-bottom: -20px;
 	margin-right: -20px;
 }
-article img{
+.article img{
 	width:500px;
 	height:500px;
 }
 bio{
 	margin-top: 35px;
-	background: rgba(138, 32, 32, 0.46);
 	margin-left: -8px;
 	margin-right: -6.5px;
 	margin-bottom: 0px;
 	color: rgb(250, 236, 212);
+}
+
+@media all and (max-width: 600px)
+{
+	header{
+		display: flex;
+		flex-direction: column;
+}
+section{
+	display: flex;
+	flex-direction: column;
+}
+footer{
+	display: flex;
+	flex-direction: column;
+}
 }

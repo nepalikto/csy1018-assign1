@@ -7,7 +7,13 @@
   </head>
   <body>
     <header>
-      <heading>I am Biplab Dhital</heading>
+      <div class="heading">
+        I am Biplab Dhital
+      </div>
+      <form>
+        <input type="text" name="textbox"/>
+        <input type="button" name="search" value="search"/>
+      </form>
     <div class="nav">
       <ul>
         <li><a href="Home.html">Home</a></li>
@@ -17,25 +23,29 @@
       </ul>
     </div>
     </header>
-  <register>
+    <section>
+    <hr>
+  <div class="register">
     <article>
     <p>Please,fill up the requirements below for contact.</p>
-    <legend>Personal information:</legend>
+        <div class="legend">
+          Personal information:
+        </div>
         First name:<br>
-        <input type="text" name="firstname" value="eg:Tom"><br>
+        <input type="text" name="firstname" required><br>
         Last name:<br>
-        <input type="text" name="lastname" value="eg:Cruise"><br>
+        <input type="text" name="lastname" required><br>
         Country<br>
-        <input type="text" name="country"><br><br>
+        <input type="text" name="country" required><br><br>
         Address<br>
-        <input type="text" name="Address" value="City,State,Country"><br>
+        <input type="text" name="Address" placeholder="City,State,Country" required><br>
         Contact number<br>
-        <input type="number" name="Contactnumber" value="977-XXXXXXX"><br>
+        <input type="number" name="Contactnumber" placeholder="code-XXXXXXX" required><br>
  </article>
  <article>
    <form>
      E-mail:<br>
-     <input type="text" name="email" value="someone@gmail.com">
+     <input type="text" name="email" placeholder="someone@example.com" required>
    </form>
    <p>Choose your gender:</p>
 <form>
@@ -67,17 +77,18 @@
     Description
   </textarea><br><br>
   <input type="submit" value="Submit">
-  <input type="reset" value="Reset">
+  <input type="reset">
 </article>
-</register>
+</div><hr>
+</section>
     <footer>
     <article>
       <p>Copyright@2017 <br>Biplab Dhital</p>
     </article>
     <article>
       Follow me on:
-      <a href="http://www.facebook.com"> <img src="images/facebook.PNG" style="width:30px; height:30px;"></a>
-      <a href="http://www.instagram.com"> <img src="images/insta.PNG" style="width:30px; height:30px;"></a>
+      <a href="http://www.facebook.com"> <img src="images/facebook.PNG" alt="#"></a>
+      <a href="http://www.instagram.com"> <img src="images/insta.PNG" alt="#"></a>
     </article>
     </footer>
   </body>
