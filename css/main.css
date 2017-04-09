@@ -1,48 +1,94 @@
+/*Name: Biplab Dhital
+UN id: 17425088
+*/
 body{
  	background-color:#008060;
 	background: linear-gradient(to top, #000000, #001a13, #003326, #004d39, #00664d, #008060, #009973, #00b386, #00cc99, #00e6ac, #00ffbf, #1affc6, #33ffcc, #4dffd2, #66ffd9, #80ffdf, #99ffe6, #b3ffec, #ccfff2, #ccfff2, #b3ffec, #99ffe6, #80ffdf, #66ffd9, #4dffd2, #33ffcc, #1affc6, #00ffbf, #00e6ac, #00cc99, #00b386, #009973, #008060, #00664d, #004d39, #003326, #001a13, #000000);
+/*this part adds background color to the body and applies gradient effect to the same color*/
 }
 header {
 	color: rgba(21, 14, 73, 0.9);
+/*adds font color to the header*/
 	text-align: center;
-	margin-top: -8px;
-	margin-left: -8px;
+  /*keep header in the center*/
+	margin-top: -8px; margin-left: -8px;/*position header in suitable way*/
 	width: 97%;
 	font-size: 20px;
 	padding:30px;
 }
 .heading{
 	text-align: center;
-	color:silver;
+	color: blue;
+  text-shadow: 2px 2px 3px red;
 	font-size: 25px;
 }
+.logo{
+  float: left;
+  margin-top: -35px;
+  margin-left: -15px;
+}
+/*align logo to the left upper corner*/
+.c1{
+  margin-top: 15%;
+  margin-left: -37%;
+}
+.c2{
+  margin-top: 15%;
+  margin-left: -28%;
+}
+.c3{
+  margin-top: 15%;
+  margin-left: -28%;
+}
+.c4{
+  margin-top: 15%;
+  margin-left: -25%;
+}
+.c5{
+  margin-top: 15%;
+  margin-left: -22%;
+}
+/*manages the academic qualification in a table like form*/
+article{
+  display: flex;
+  flex-direction: row;
+}
+/*display section article side by side*/
+article p{
+  margin-top: 10%;
+  color: pink;
+  font-style: oblique;
+  padding: 1%;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px blue;
+}
+/*styles the paragraph of article*/
 header form{
 	float:right;
 	margin-top: -18px;
 }
-input[type=char]{
-	border: 2px solid black;
-	border-radius: 7px;
+/*aligns search panel to the right side of the page*/
 
-}
 input[type=button]{
 	background: pink;
 	border: 2px solid black;
 	border-radius: 7px;
 	color:blue;
 }
+/*gives background and border to the search panel*/
 	ul {
-    list-style-type: none;
+    list-style-type: none;/*removes bulleting of the link in navigation*/
 		padding: 1%;
+    display: flex;
+    flex-direction: row;
 	}
 li a {
     display: block;
 		border: 1px solid #990099;
     padding: 8px 30px;
 		border-radius: 4px;
-    text-decoration: none;
-		color:yellow;
-		float: left;
+    text-decoration: none;/*removes underline in links in navigation*/
+		color:black;
 }
 li a:hover {
     background-color: #00ffff;
@@ -50,19 +96,19 @@ li a:hover {
 		font-size: 22px;
 		border: 1px solid #ff6666;
 }
-section{
-	background: #008060;
-}
+/*changes background color, text color and fontsize also provides margin in the navigation on mouse hover*/
 	.img{
 		display: block;
 		border: 1px solid lightblue;
 	  border-radius: 5px;
 	}
+  /*displays image as block and add border to the image*/
 	.img img{
 		width:1424px;
 		float: left;
-		height:550px;
+		height:450px;
 	}
+  /*shhift image to the left and fix the height of image*/
 	.outer{
 		width:1424px;
 		overflow: hidden;
@@ -71,12 +117,13 @@ section{
 		margin-bottom: -10px;
 		height:435px;
 	}
+  /*manages the width of the image div and height for slideshow*/
 	.img{
 		position: relative;
 		width:4272px;
 		animation-name:biplab;
-		animation-duration: 20s;
-		animation-iteration-count: infinite;
+		animation-duration: 10s;/*time for which the image have to complete the slidedhow*/
+		animation-iteration-count: infinite;/*the animation should continue infinitely*/
 	}
 	@keyframes biplab{
 		0%{
@@ -106,62 +153,42 @@ section{
 		100%{
 			left:0px;
 		}
+    /*calculations to perform slideshow with respect to animation time*/
 	}
 
 	footer{
-		display: flex;
-		justify-content: space-between;
+		display: flex;/*divides footer section in two equal halves*/
+		justify-content: space-between;/*two divs are seperated having equal space between them*/
 		margin-left: -8px;
 		margin-right: -6.5px;
 		margin-bottom: -30px;
 		color: white;
 	}
-    footer article img{
+    footer img{
 		width:30px;
 		height:30px;
-	}
+    transition-duration: 2s;/*time for which the footer image should complete transition*/
+}
+  footer img:hover{
+    transform: rotate(360deg);
+    /*footer image will rotate in cicle on mouse hover*/
+  }
 	.register{
 		margin-top: 4%;
 		margin-left: 1%;
 		margin-right: 1%;
 		width:auto;
-		color:white;
-		display:flex;
-		flex-direction: row;
-		justify-content: space-between;
 		color: black;
 }
 	input[type=text] {
 	    width: auto;
-	    padding: 10px 15px;
+	    padding: 5px 5px;
 	    margin: 6px 0;
 	    box-sizing: border-box;
-
+      border: 1px solid blue;
+      border-radius: 3px;
 	}
-	input[type=text] {
-    border: 1px solid blue;
-    border-radius: 3px;
-}
-	input[type=number] {
-	    width: auto;
-	    padding: 10px 15px;
-	    margin: 6px 0;
-	    box-sizing: border-box;
-	}
-	input[type=number] {
-    border: 1px solid blue;
-    border-radius: 3px;
-	}
-	input[type=date] {
-	    width: auto;
-	    padding: 8px 10px;
-	    margin: 6px 0;
-	    box-sizing: border-box;
-	}
-	input[type=date] {
-    border: 1px solid blue;
-    border-radius: 3px;
-	}
+  /*gives border and margin to the form inside contact page*/
 	input[type=submit], input[type=reset] {
     background-color:#666633;
     border: none;
@@ -171,25 +198,23 @@ section{
     margin: 4px 2px;
     cursor: pointer;
 }
+/*adds color, padding and margin to the submit and reset button*/
 input[type=submit]:hover, input[type=reset]:hover{
 	font-size: 18px;
 	background: green;
+  /*changes font size and background of submit and reset on hover*/
 }
+
+.current {background: #00ffff;}/*makes the active page indicator by giving background color*/
 .content{
 	margin-top: 0px;
 	margin-left: -8px;
 	margin-right: -6.5px;
 	margin-bottom: 0px;
-	color: black;
 	display:flex;
 	flex-direction: row;
 	padding:3.6%;
 	justify-content: space-between;
-}
-table, th, td {
-    border: 1px solid black;
-		padding: 2%;
-		width:500px;
 }
 .pic img{
 	border: solid violet;
@@ -200,30 +225,28 @@ table, th, td {
 	margin-bottom: -20px;
 	margin-right: -20px;
 }
-.article img{
-	width:500px;
-	height:500px;
-}
-bio{
-	margin-top: 35px;
-	margin-left: -8px;
-	margin-right: -6.5px;
-	margin-bottom: 0px;
-	color: rgb(250, 236, 212);
-}
-
-@media all and (max-width: 600px)
+@media (max-width: 600px)/*all the following codes are responsible for responsiveness of the pages*/
 {
-	header{
-		display: flex;
-		flex-direction: column;
+ul{display: flex;
+  flex-direction: column;
+  width: 100%;
 }
-section{
-	display: flex;
-	flex-direction: column;
+header form{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 227px;
 }
 footer{
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+.outer {
+  width: 500px;
+  height: 200px;
+}
+.img{
+  width: 500px;
+}
+
 }

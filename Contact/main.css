@@ -1,0 +1,21 @@
+@media (max-width: 400px)
+/*all the following codes are responsible for responsiveness of the webpage*/
+{
+ul{display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+}
